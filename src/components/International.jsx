@@ -3,6 +3,7 @@ import Internationals from '../assets/internatinal.png';
 
 export const International = () => {
   return (
+    <>
     <div className="w-full flex flex-col-reverse md:flex-row bg-white/20 items-center">
       {/* Left section */}
       <div className="w-full md:w-1/2 relative flex flex-col items-center justify-center p-5 md:p-8 lg:p-10 text-black order-1 md:order-none">
@@ -26,7 +27,7 @@ export const International = () => {
 
           {/* Explore Button */}
           <div className="flex justify-center">
-          <div className="w-28 md:w-32 h-10 border-2 border-black cursor-pointer flex items-center justify-center rounded-2xl hover:bg-black/25 font-bold">
+          <div className="w-28 md:w-32 h-10 border-2 border-black cursor-pointer flex items-center justify-center rounded-2xl hover:bg-black/25 font-bold" onClick={()=>window.location.href='/enquiry'}>
             <button className="text-black">Explore</button>
           </div>
           </div>
@@ -40,5 +41,9 @@ export const International = () => {
         </div>
       </div>
     </div>
+
+    
+    </>
+
   );
 };

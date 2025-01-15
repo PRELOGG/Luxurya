@@ -2,8 +2,13 @@ import React from 'react';
 import Tree from '../assets/Trees between Hills.avif';
 import Vacctions from '../assets/Vacation.avif';
 
+
+
 export const Vacction = () => {
+
+
   return (
+    <>
     <div className="w-full flex flex-col md:flex-row bg-white/20 items-center">
       {/* Left section */}
       <div className="w-full md:w-1/2 relative">
@@ -41,12 +46,16 @@ export const Vacction = () => {
             </div>
 
             {/* Explore Button */}
-            <div className="w-28 md:w-32 h-10 border-2 border-white cursor-pointer flex items-center justify-center rounded-2xl hover:bg-white/90 font-bold">
+            <div className="w-28 md:w-32 h-10 border-2 border-white cursor-pointer flex items-center justify-center rounded-2xl hover:bg-white/90 font-bold" onClick={()=>window.location.href='/enquiry'}>
               <button className="text-black">Explore</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+   
+    
+    </>
   );
 };

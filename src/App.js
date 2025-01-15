@@ -1,13 +1,18 @@
 import React from 'react'
 import { Header } from './components/Header'
-import { Vacction } from './components/Vacction'
-import { International } from './components/International'
+
+import { Route, Routes } from 'react-router-dom'
+import { Enquirey } from './components/Enquirey'
 
 export const App = () => {
   return (
     <div>
     
-      <Header/>
+      <Routes>
+        <Route path='/' element={<Header/>}></Route>
+        <Route path='/enquiry' element={<Enquirey/>}></Route>
+
+      </Routes>
       
     </div>
   )

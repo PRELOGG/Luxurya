@@ -3,6 +3,7 @@ import Lucky from '../assets/Luxurya.avif';
 
 export const Luxuryatours = () => {
   return (
+    <>
     <div className="w-full flex items-center justify-center p-10 bg-gray-100">
       {/* Image and content container */}
       <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
@@ -26,11 +27,13 @@ export const Luxuryatours = () => {
           </div>
 
           {/* Explore Button */}
-          <div className="w-28 md:w-32 h-10 border-2 border-white cursor-pointer flex items-center justify-center rounded-2xl bg-white/70 hover:bg-white/90 font-bold">
+          <div className="w-28 md:w-32 h-10 border-2 border-white cursor-pointer flex items-center justify-center rounded-2xl bg-white/70 hover:bg-white/90 font-bold" onClick={()=>window.location.href='/enquiry'}>
             <button className="text-black">Explore</button>
           </div>
         </div>
       </div>
     </div>
+    
+    </>
   );
 };
