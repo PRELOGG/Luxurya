@@ -8,6 +8,7 @@ import { Explore } from './Explore';
 import { Footer } from './Footer';
 
 
+
 export const Header = () => {
 
 
@@ -24,10 +25,10 @@ export const Header = () => {
           <img
             src={Logos}
             alt="logo"
-            className="h-20 md:h-24 object-contain"
+            className="h-20  w-40 rounded-xl"
           />
         </div>
-        <div>
+        <div className="shadow-2xl shadow-slate-950 ">
           <p
            onClick={()=>window.location.href='/enquiry'}
             className="cursor-pointer text-blue-500 hover:underline text-sm md:text-base"
@@ -38,13 +39,15 @@ export const Header = () => {
       </div>
 
       {/* Main Content */}
-      <div className="px-4 md:px-8">
+      <div className="px-1 md:px-4 relative top-14">
+        
         <Vacction />
         <International />
         <Luxuryatours />
         <Explore />
-        <Footer />
+        
       </div>
+      <Footer />
 
 
     </div>

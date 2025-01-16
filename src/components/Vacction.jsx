@@ -1,13 +1,8 @@
 import React from 'react';
 import Tree from '../assets/Trees between Hills.avif';
 import Vacctions from '../assets/Vacation.avif';
-
-
-
 export const Vacction = () => {
-
-
-  return (
+return (
     <>
     <div className="w-full flex flex-col md:flex-row bg-white/20 items-center">
       {/* Left section */}
@@ -27,10 +22,10 @@ export const Vacction = () => {
       {/* Right section */}
       <div className="w-full md:w-1/2 relative">
         <div className="sticky top-0 w-full">
-          <img src={Vacctions} alt="loading..." className="w-full p-5" />
+          <img src={Vacctions} alt="loading..." className="w-full p-5 " />
 
           {/* Overlay content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center p-5 md:p-8 lg:p-10 text-white">
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-10 md:p-8 lg:p-10 text-white bg-black/25 blur-0 opacity-56">
             {/* Title */}
             <div className="text-center mb-6">
               <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold">
